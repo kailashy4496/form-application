@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+.flex {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.col-1 {
+  height: 40px;
+  width: 100%;
+  margin-right: 1rem;
+  border: 0.1px solid black;
+  border-radius: 4px;
+}
+
+.col-1-mt input {
+  width: 80%;
+  height: 30px;
+  margin-top: 2px;
+  padding-left: 1rem;
+  border: none;
+  outline: none;
+  /* cursor: pointer; */
+}
+
+.col-2 {
+  height: 40px;
+  width: 100%;
+  margin-right: 1rem;
+  border: 0.1px solid black;
+  border-radius: 4px;
+}
+
+.col-3 {
+  height: 40px;
+  width: 98%;
+  margin-right: 1rem;
+  border: 0.1px solid black;
+  border-radius: 4px;
+}
+
+.col-3-pl input {
+  width: 90%;
+  height: 30px;
+  margin-top: 2px;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  /* cursor: pointer; */
+}
+
+.col-4 {
+  height: 40px;
+  width: 98%;
+  margin-right: 1rem;
+  border: 0.1px solid black;
+  border-radius: 4px;
+}
+
+.col-5 {
+  height: 40px;
+  width: 98%;
+  margin-right: 1rem;
+  border: 0.1px solid black;
+  border-radius: 4px;
+}
+
+/* .col-6 {
+    height: 40px;
+    width: 98%;
+    margin-right: 1rem;
+    border: 0.1px solid black;
+    border-radius: 4px;
+  } */
+
+.col-7 {
+  height: 40px;
+  width: 98%;
+  margin-right: 1rem;
+  border: 0.1px solid black;
+  border-radius: 4px;
+}
+
+.col-8 {
+  height: 40px;
+  width: 98%;
+  margin-right: 1rem;
+  border: 0.1px solid black;
+  border-radius: 4px;
+}
+
+.col-9 {
+  margin-right: 1rem;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.col-9-tx textarea {
+  width: 99%;
+  border: 0.1px solid black;
+  outline: none;
+  border-radius: 4px;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.rw-1 {
+  height: 40px;
+  width: 98%;
+  margin-right: 1rem;
+  border: 0.1px solid black;
+  border-radius: 4px;
+}
+
+.db-rw-1 input {
+  width: 90%;
+  height: 30px;
+  margin-top: 2px;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+}
+
+.col-btn {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.btn {
+  height: 35px;
+  width: 20%;
+  margin-right: 1rem;
+  border-radius: 5px;
+  font-size: 15px;
+  background: linear-gradient(150deg, black, azure);
+  color: azure;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.btn:hover {
+  color: black;
+  background-color: azure;
+}
