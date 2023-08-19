@@ -12,7 +12,7 @@ import FormLanding from './pages/FormLanding';
 
 function App() {
   return (
-    <div className=''>
+    <div className='app'>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<FormLanding />} />

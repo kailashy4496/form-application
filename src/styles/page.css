@@ -1,10 +1,47 @@
-.cl-p-1 {
+.form-landing {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+}
+
+.class-form {
+  padding: 2rem;
+}
+
+.heading {
+  font-family: fantasy;
+  color: white;
+}
+
+.heading > h1 {
+  text-align: center;
+}
+
+.heading > p {
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.cl-form {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+/* .cl-p-1 {
   width: 100%;
   height: 100%;
   background-color: rgb(190, 221, 233);
   display: flex;
   justify-content: center;
 }
+
+.cl-p-2{
+  height: 100%; */
+/* width: 100px; */
+/* display: flex; */
+/* margin: 0px auto; */
+/* }
 
 .cl-p-3 {
   text-align: center;
@@ -22,4 +59,4 @@
 
 .d-flex{
     display: flex;
-}
+} */

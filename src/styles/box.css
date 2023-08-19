@@ -1,10 +1,29 @@
+.all-sec {
+  height: 100%;
+  width: 90%;
+  border: 1px solid red;
+  margin: auto;
+}
 
-.bx input{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+.sel-class {
+  font-family: fantasy;
+}
+
+.sel-class > h3 {
+  font-size: 25px;
 }
 
 .bx {
-    font-size: 20px;
+  font-size: 20px;
+  padding: 3px 0;
+}
+
+.bx input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.appliction-form{
+    margin-top: 10px;
 }
