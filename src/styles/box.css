@@ -1,29 +1,27 @@
 .all-sec {
   height: 100%;
   width: 90%;
-  border: 1px solid red;
   margin: auto;
-}
-
-.sel-class {
   font-family: fantasy;
 }
 
-.sel-class > h3 {
+.section_heading{
   font-size: 25px;
 }
 
-.bx {
+.box {
+  display: flex;
   font-size: 20px;
   padding: 3px 0;
 }
 
-.bx input {
+.box input {
   width: 20px;
   height: 20px;
+  margin: 5px;
   cursor: pointer;
 }
 
-.appliction-form{
+.application-form{
     margin-top: 10px;
 }

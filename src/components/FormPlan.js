@@ -17,7 +17,6 @@ const FormPlan = () => {
         city: "",
         state: "",
         pinCode: "",
-        country: "",
         phone: "",
         qualification: "",
     };
@@ -100,316 +99,268 @@ const FormPlan = () => {
     };
 
     return (
-        <>
-            <div className='formPlan'>
-                <form onSubmit={handleSubmit}>
-                    <div className='flex'>
-                        <div className='d-flex'>
-                            <div className='app-name'>
-                                <label>Full Name of Applicant</label>
-                            </div>
-                            <div className='col-1'>
-                                <input
-                                    type='text'
-                                    name='fName'
-                                    placeholder='First'
-                                    value={formValues.fName}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.fName}</p>
-                            </div>
-                            <div className='col-1'>
-                                <input
-                                    type='text'
-                                    name='mName'
-                                    placeholder='Middle'
-                                    value={formValues.mName}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.mName}</p>
-                            </div>
-                            <div className='col-1'>
-                                <input
-                                    type='text'
-                                    name='lName'
-                                    placeholder='Last'
-                                    value={formValues.lName}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.lName}</p>
-                            </div>
+        <div className='formPlan'>
+            <form onSubmit={handleSubmit}>
+                <div className='candidate-name'>
+                    <div className='app-name'>
+                        <label>Full Name of Applicant</label>
+                    </div>
+                    <div className='form-input'>
+                        <div className='name'>
+                            <input
+                                type='text'
+                                name='fName'
+                                placeholder='First'
+                                value={formValues.fName}
+                                onChange={handleChange}
+                            />
+                            <p className='colors'>{formErrors.fName}</p>
+                        </div>
+                        <div className='name'>
+                            <input
+                                type='text'
+                                name='mName'
+                                placeholder='Middle'
+                                value={formValues.mName}
+                                onChange={handleChange}
+                            />
+                            <p className='colors'>{formErrors.mName}</p>
+                        </div>
+                        <div className='name'>
+                            <input
+                                type='text'
+                                name='lName'
+                                placeholder='Last'
+                                value={formValues.lName}
+                                onChange={handleChange}
+                            />
+                            <p className='colors'>{formErrors.lName}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='parent-name'>
+                    <div className='app-name'>
+                        <label>Parent / Guardian's Name</label>
+                    </div>
+                    <div className='form-input'>
+                        <div className='name'>
+                            <input
+                                type='text'
+                                name='faName'
+                                placeholder='First'
+                                value={formValues.faName}
+                                onChange={handleChange}
+                            />
+                            <p className='colors'>{formErrors.faName}</p>
+                        </div>
+                        <div className='name'>
+                            <input
+                                type='text'
+                                name='miName'
+                                placeholder='Middle'
+                                value={formValues.miName}
+                                onChange={handleChange}
+                            />
+                            <p className='colors'>{formErrors.miName}</p>
+                        </div>
+                        <div className='name'>
+                            <input
+                                type='text'
+                                name='laName'
+                                placeholder='Last'
+                                value={formValues.laName}
+                                onChange={handleChange}
+                            />
+                            <p className='colors'>{formErrors.laName}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='occupation'>
+                    <div className='app-name'>
+                        <label>Parent / Guardian's Occupation</label>
+                    </div>
+                    <div className='name'>
+                        <input
+                            type='text'
+                            name='occupation'
+                            placeholder='Occupation'
+                            value={formValues.occupation}
+                            onChange={handleChange}
+                            className=''
+                        />
+                    </div>
+                    <p className='colors'>{formErrors.occupation}</p>
+                </div>
+                <div className='date-of-birth'>
+                    <div className='app-name'>
+                        <label>Date of birth</label>
+                    </div>
+                    <div className='name'>
+                        <input
+                            type='date'
+                            name='dob'
+                            placeholder=''
+                            value={formValues.dob}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <p className='colors'>{formErrors.dob}</p>
+                </div>
+
+                <div className='email'>
+                    <div className='app-name'>
+                        <label>Email</label>
+                    </div>
+                    <div className='name'>
+                        <input
+                            type='email'
+                            name='email'
+                            placeholder='Email'
+                            value={formValues.email}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <p className='colors'>{formErrors.email}</p>
+                </div>
+                <div className='address'>
+                    <div className='app-name'>
+                        <label>Permanent Address</label>
+                    </div>
+                    <div className='address-form-input'>
+                        <div className='street'>
+                            <input
+                                type='text'
+                                name='address'
+                                placeholder='Street Address'
+                                value={formValues.address}
+                                onChange={handleChange}
+                            />
+                            <p className='colors'>{formErrors.address}</p>
+                        </div>
+                        <div className='street'>
+                            <input
+                                type='text'
+                                name='city'
+                                placeholder='City'
+                                value={formValues.city}
+                                onChange={handleChange}
+                            />
+                            <p className='colors'>{formErrors.city}</p>
                         </div>
                     </div>
 
-                    <div className='flex'>
-                        <div className='d-flex'>
-                            <div className='app-name'>
-                                <label>Parent / Guardian's Name</label>
-                            </div>
-                            <div className='col-2'>
-                                <input
-                                    type='text'
-                                    name='faName'
-                                    placeholder='First'
-                                    value={formValues.faName}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.faName}</p>
-                            </div>
-                            <div className='col-2'>
-                                <input
-                                    type='text'
-                                    name='miName'
-                                    placeholder='Middle'
-                                    value={formValues.miName}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.miName}</p>
-                            </div>
-                            <div className='col-2'>
-                                <input
-                                    type='text'
-                                    name='laName'
-                                    placeholder='Last'
-                                    value={formValues.laName}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.laName}</p>
-                            </div>
+                    <div className="address-form-input">
+                        <div className='street option'>
+                            <SelectDropdown
+                                options={[
+                                    { label: "Andaman & Nicobar Islands", value: "AAN" },
+                                    { label: "Andhra Pradesh", value: "ANDH" },
+                                    { label: "Arunachal Pradesh", value: "ARUN" },
+                                    { label: "Assam", value: "ASSM" },
+                                    { label: "Bihar", value: "BIHA" },
+                                    { label: "Chandigarh", value: "CHAN" },
+                                    { label: "Chattisgarh", value: "CHHA" },
+                                    { label: "Dadra & Nagar Haveli", value: "DNH" },
+                                    { label: "Daman & Diu", value: "DAD" },
+                                    { label: "Delhi", value: "DELH" },
+                                    { label: "Goa", value: "GOA" },
+                                    { label: "Gujarat", value: "GUJA" },
+                                    { label: "Haryana", value: "HARY" },
+                                    { label: "Himachal Pradesh", value: "HP" },
+                                    { label: "Jammu & Kashmir", value: "JAK" },
+                                    { label: "Jharkhand", value: "JHAR" },
+                                    { label: "Karnataka", value: "KARN" },
+                                    { label: "Kerala", value: "KERA" },
+                                    { label: "Lakshadweep", value: "LAKS" },
+                                    { label: "Madhya Pradesh", value: "MP" },
+                                    { label: "Maharashtra", value: "MAHA" },
+                                    { label: "Manipur", value: "MANI" },
+                                    { label: "Meghalaya", value: "MEGH" },
+                                    { label: "Mizoram", value: "MIZO" },
+                                    { label: "Nagaland", value: "NAGA" },
+                                    { label: "Odisha", value: "ORIS" },
+                                    { label: "Pondicherry", value: "POND" },
+                                    { label: "Punjab", value: "PUNJ" },
+                                    { label: "Rajasthan", value: "RAJA" },
+                                    { label: "Sikkim", value: "SIKK" },
+                                    { label: "Tamil Nadu", value: "TN" },
+                                    { label: "Telangana", value: "TNG" },
+                                    { label: "Tripura", value: "TRIP" },
+                                    { label: "Uttar Pradesh", value: "UP" },
+                                    { label: "Uttarakhand", value: "UTTD" },
+                                    { label: "West Bengal", value: "WB" }
+                                ]}
+                                name='state'
+                                value={formValues.state}
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div className='street'>
+                            <input
+                                type='text'
+                                name='pinCode'
+                                placeholder='Postal/Zip Code'
+                                value={formValues.pinCode}
+                                onChange={handleChange}
+                            />
+                            <p className='colors'>{formErrors.pinCode}</p>
                         </div>
                     </div>
+                </div>
 
-                    <div className='flex'>
-                        <div className='d-flex'>
-                            <div className='app-name'>
-                                <label>Parent / Guardian's Occupation</label>
-                            </div>
-                            <div className='col-3'>
-                                <input
-                                    type='text'
-                                    name='occupation'
-                                    placeholder='Occupation'
-                                    value={formValues.occupation}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                            </div>
-                            <p className='colors'>{formErrors.occupation}</p>
-                        </div>
+                <div className='contact'>
+                    <div className='app-name'>
+                        <label>Applicant's Phone</label>
                     </div>
-                    <div className='flex'>
-                        <div className='d-flex'>
-                            <div className='app-name'>
-                                <label>Date of birth</label>
-                            </div>
-                            <div className='col-4'>
-                                <input
-                                    type='date'
-                                    name='dob'
-                                    placeholder=''
-                                    value={formValues.dob}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                            </div>
-                            <p className='colors'>{formErrors.dob}</p>
-                        </div>
+                    <div className='name'>
+                        <input
+                            type='text'
+                            name='phone'
+                            placeholder='### ### ####'
+                            value={formValues.phone}
+                            onChange={handleChange}
+                        />
+                        <p className='colors'>{formErrors.phone}</p>
                     </div>
+                </div>
+                <div className='contact'>
+                    <div className='app-name'>
+                        <label>Parent / Guardian's Phone</label>
+                    </div>
+                    <div className='name'>
+                        <input
+                            type='text'
+                            name='phone'
+                            placeholder='### ### ####'
+                            value={formValues.phone}
+                            onChange={handleChange}
+                        />
+                        <p className='colors'>{formErrors.phone}</p>
+                    </div>
+                </div>
+                <div className='qualification'>
+                    <div className='app-name'>
+                        <label>Academic Qualifications</label>
+                    </div>
+                    <div className='qualification-field'>
+                        <textarea
+                            name="qualification"
+                            cols="80"
+                            rows="6"
+                            value={formValues.qualification}
+                            onChange={handleChange}
+                        >
+                        </textarea>
+                    </div>
+                    <p className='colors'>{formErrors.qualification}</p>
+                </div>
+                <div className='col-btn'>
+                    <button className='btn'>Submit Form</button>
+                </div>
+            </form >
+        </div>
 
-                    <div className='flex'>
-                        <div className='d-flex'>
-                            <div className='app-name'>
-                                <label>Email</label>
-                            </div>
-                            <div className='col-5'>
-                                <input
-                                    type='email'
-                                    name='email'
-                                    placeholder='Email'
-                                    value={formValues.email}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                            </div>
-                            <p className='colors'>{formErrors.email}</p>
-                        </div>
-                    </div>
-                    <div className='flex'>
-                        <div className='d-flex'>
-                            <div className='app-name'>
-                                <label>Permanent Address</label>
-                            </div>
-                            <div className=''>
-                                <input
-                                    type='text'
-                                    name='address'
-                                    placeholder='Street Address'
-                                    value={formValues.address}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.address}</p>
-                            </div>
-                            <div className=''>
-                                <input
-                                    type='text'
-                                    name='city'
-                                    placeholder='City'
-                                    value={formValues.city}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.city}</p>
-                            </div>
-
-                            <div className="col-12 mb-4">
-                                <SelectDropdown
-                                    label=""
-                                    options={[
-                                        { label: "Andaman & Nicobar Islands", value: "AAN" },
-                                        { label: "Andhra Pradesh", value: "ANDH" },
-                                        { label: "Arunachal Pradesh", value: "ARUN" },
-                                        { label: "Assam", value: "ASSM" },
-                                        { label: "Bihar", value: "BIHA" },
-                                        { label: "Chandigarh", value: "CHAN" },
-                                        { label: "Chattisgarh", value: "CHHA" },
-                                        { label: "Dadra & Nagar Haveli", value: "DNH" },
-                                        { label: "Daman & Diu", value: "DAD" },
-                                        { label: "Delhi", value: "DELH" },
-                                        { label: "Goa", value: "GOA" },
-                                        { label: "Gujarat", value: "GUJA" },
-                                        { label: "Haryana", value: "HARY" },
-                                        { label: "Himachal Pradesh", value: "HP" },
-                                        { label: "Jammu & Kashmir", value: "JAK" },
-                                        { label: "Jharkhand", value: "JHAR" },
-                                        { label: "Karnataka", value: "KARN" },
-                                        { label: "Kerala", value: "KERA" },
-                                        { label: "Lakshadweep", value: "LAKS" },
-                                        { label: "Madhya Pradesh", value: "MP" },
-                                        { label: "Maharashtra", value: "MAHA" },
-                                        { label: "Manipur", value: "MANI" },
-                                        { label: "Meghalaya", value: "MEGH" },
-                                        { label: "Mizoram", value: "MIZO" },
-                                        { label: "Nagaland", value: "NAGA" },
-                                        { label: "Odisha", value: "ORIS" },
-                                        { label: "Pondicherry", value: "POND" },
-                                        { label: "Punjab", value: "PUNJ" },
-                                        { label: "Rajasthan", value: "RAJA" },
-                                        { label: "Sikkim", value: "SIKK" },
-                                        { label: "Tamil Nadu", value: "TN" },
-                                        { label: "Telangana", value: "TNG" },
-                                        { label: "Tripura", value: "TRIP" },
-                                        { label: "Uttar Pradesh", value: "UP" },
-                                        { label: "Uttarakhand", value: "UTTD" },
-                                        { label: "West Bengal", value: "WB" }
-                                    ]}
-                                    name='state'
-                                    value={formValues.state}
-                                    onChange={handleChange}
-                                />
-                            </div>
-
-                            <div className=''>
-                                <input
-                                    type='text'
-                                    name='pinCode'
-                                    placeholder='Postal/Zip Code'
-                                    value={formValues.pinCode}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.pinCode}</p>
-                            </div>
-
-                            <div className="col-12 mb-4">
-                                <SelectDropdown
-                                    label=""
-                                    options={[
-                                        { label: "AFGANISTAN", value: "AFG" },
-                                        { label: "BANGLADESH", value: "BNG" },
-                                        { label: "INDIA", value: "IND" },
-                                        { label: "PAKISTAN", value: "PAK" },
-                                        { label: "NEPAL", value: "NEP" },
-                                        { label: "CHINA", value: "CHN" },
-                                        { label: "SRILANKA", value: "SRI" },
-                                        { label: "RUSSIA", value: "RUS" }
-                                    ]}
-                                    name="country"
-                                    value={formValues.country}
-                                    onChange={handleChange}
-                                />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='flex'>
-                        <div className='d-flex'>
-                            <div className='app-name'>
-                                <label>Applicant's Phone</label>
-                            </div>
-                            <div className='col-7'>
-                                <input
-                                    type='text'
-                                    name='phone'
-                                    placeholder='### ### ####'
-                                    value={formValues.phone}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.phone}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex'>
-                        <div className='d-flex'>
-                            <div className='app-name'>
-                                <label>Parent / Guardian's Phone</label>
-                            </div>
-                            <div className='col-8'>
-                                <input
-                                    type='text'
-                                    name='phone'
-                                    placeholder='### ### ####'
-                                    value={formValues.phone}
-                                    onChange={handleChange}
-                                    className=''
-                                />
-                                <p className='colors'>{formErrors.phone}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='flex'>
-                        <div className='d-flex'>
-                            <div className='app-name'>
-                                <label>Academic Qualifications</label>
-                            </div>
-                            <div className='col-9'>
-                                <textarea
-                                    name="qualification"
-                                    id=""
-                                    cols="40"
-                                    rows="6"
-                                    value={formValues.qualification}
-                                    onChange={handleChange}
-                                    className=''
-                                >
-                                </textarea>
-                                <p className='colors'>{formErrors.qualification}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-btn'>
-                        <button className='btn'>Submit Form</button>
-                    </div>
-                </form >
-            </div>
-        </>
     )
 }
 

@@ -7,32 +7,30 @@ import FormPlan from '../components/FormPlan';
 const Program = () => {
     return (
         <div className='all-sec'>
-            <div className='sel-class'>
-                <h3>Applied for:</h3>
-                <div className='pro-bx'>
-                    <div className='bx'>
-                        <input type='checkbox' id='program1' name='class' value='class6' />
-                        <span>6th Class</span>
-                    </div>
-                    <div className='bx'>
-                        <input type='checkbox' id='program2' name='class' value='class7' />
-                        <span>7th Class</span>
-                    </div>
-                    <div className='bx'>
-                        <input type='checkbox' id='program3' name='class' value='class8' />
-                        <span>8th Class</span>
-                    </div>
-                    <div className='bx'>
-                        <input type='checkbox' id='program4' name='class' value='class9' />
-                        <span>9th Class</span>
-                    </div>
-                    <div className='bx'>
-                        <input type='checkbox' id='program5' name='class' value='class10' />
-                        <span>10th Class</span>
-                    </div>
+            <h3 className='section_heading'>Applied for :</h3>
+            <div className='pro-box'>
+                <div className='box'>
+                    <input type='checkbox' id='program1' name='class' value='class6' />
+                    <label>6th Class</label>
+                </div>
+                <div className='box'>
+                    <input type='checkbox' id='program2' name='class' value='class7' />
+                    <label>7th Class</label>
+                </div>
+                <div className='box'>
+                    <input type='checkbox' id='program3' name='class' value='class8' />
+                    <label>8th Class</label>
+                </div>
+                <div className='box'>
+                    <input type='checkbox' id='program4' name='class' value='class9' />
+                    <label>9th Class</label>
+                </div>
+                <div className='box'>
+                    <input type='checkbox' id='program5' name='class' value='class10' />
+                    <label>10th Class</label>
                 </div>
             </div>
-            <div className='appliction-form'>
+            <div className='application-form'>
                 <FormPlan />
             </div>
         </div>

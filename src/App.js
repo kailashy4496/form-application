@@ -1,5 +1,5 @@
 import './App.css';
-import './styles/page.css';
+// import './styles/page.css';
 
 import {
   BrowserRouter,
@@ -12,7 +12,7 @@ import FormLanding from './pages/FormLanding';
 
 function App() {
   return (
-    <div className='app'>
+    <div className='App'>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<FormLanding />} />
